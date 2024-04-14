@@ -1,5 +1,4 @@
-# CleoAI
-CleoAI: Your brainstorming assistant. Generate ideas effortlessly.
+# CleoAI - AI Brainstorming Assistant
 
 Demo URL: [CleoAI.cn](https://cleoai.cn)
 
