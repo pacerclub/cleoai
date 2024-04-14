@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CleoAI | AI Brainstorm Tool</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="logoContainer">
+            <h1 id="title"><div class="gradient">Cleo</div>AI</h1>
+            <h2 id="description">Your Personal AI Brainstorming Assistant</h2>
+        </div>
+
+        <input id="inputBar" placeholder="Enter your idea...">
+        <button id="generateBtn" onclick="generateIdea(document.getElementById('inputBar').value)">
+            <span id="generateBtnInternal">Generate Ideas</span>
+            <img class="loading-icon" src="assets/loading.gif">
+        </button>
+        <div id="pathContainer"></div>
+        <div id="ideaContainer"></div>
+    </div>
+    <footer>
+        <p>&copy; 2024 CleoAI. All rights reserved. Developed by <a href="https://github.com/ZigaoWang">Zigao Wang</a> , <a href="https://github.com/JettChenT">Jett Chen</a> , <a href="https://github.com/KristerferMa">Kris Ma</a> and <a href="https://cleoai.cn"> David Zhao</a>.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

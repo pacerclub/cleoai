@@ -1,0 +1,149 @@
+/* General Styles */
+body {
+    font-family: -apple-system, "system-ui", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    font-weight: 300;
+    text-align: center;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    width: 90%;
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p {
+    font-size: 2vh;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: 800;
+    transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+/* Container Styles */
+.container {
+    width: 80vw;
+    margin: 50px auto;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading Styles */
+h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+#logoContainer {
+    margin-top: 50px;
+}
+
+#title {
+    font-size: 7vh;
+    margin-bottom: 0;
+    font-weight: 600;
+    position: relative;
+    display: inline-block;
+}
+
+.gradient {
+    background: #fc00ff;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #00dbde, #fc00ff);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #00dbde, #fc00ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+
+#description {
+    font-weight: 300;
+    margin-bottom: 50px;
+    font-size: 2.5vh;
+}
+
+/* Input Styles */
+input:not([type="file" i], [type="image" i], [type="checkbox" i], [type="radio" i]) {
+    width: 90%;
+    padding: 15px;
+    margin-bottom: 50px;
+    border: none;
+    border-radius: 10px;
+    background-color: #f0f0f0;
+    font-size: 2vh;
+    outline: none;
+    transition: background-color 0.3s;
+}
+
+input[type="text"]::placeholder {
+    color: #999;
+}
+
+input[type="text"]:focus {
+    background-color: #e0e0e0;
+}
+
+/* Button Styles */
+button {
+    padding: 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 2vh;
+    transition: background-color 0.3s;
+    display: inline-block;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Loading Icon Styles */
+.loading-icon {
+    width: 5vh;
+    display: none;
+    margin: 10px auto 0; /* simplified margin */
+}
+
+.loading > .loading-icon {
+    display: block;
+}
+
+/* Idea Container Styles */
+#ideaContainer {
+    margin-bottom: 40px;
+    text-align: left;
+    padding: 30px;
+}
+
+#ideaContainer h1 {
+    margin-bottom: 15px;
+}
+
+#ideaContainer p {
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: #f1f1f1;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+#ideaContainer span {
+    margin-bottom: 15px;
+}
+
+footer {
+    bottom: 0%;
+    position: relative;
+}
