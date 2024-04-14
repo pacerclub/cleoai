@@ -42,7 +42,7 @@ const render_path = (path) => {
         let btn = document.createElement('button');
         btn.onclick = (() => {render_ideas(cid)})
         btn.className = 'breadcrumb-item'
-        btn.textContent = cid == 'base' ? 'base' : idea.idea_name
+        btn.textContent = cid == 'base' ? 'Home' : idea.idea_name
         let slash = document.createElement('span')
         slash.innerText = '/'
         slash.className = 'breadcrumb-slash'
