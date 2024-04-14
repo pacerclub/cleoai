@@ -1,6 +1,6 @@
 const REMOTE_API =  "https://api.cleoai.cn"
 const LOCAL_API = "http://localhost:8000"
-const USE_REMOTE = false;
+const USE_REMOTE = true;
 
 const API_URL = USE_REMOTE ? REMOTE_API : LOCAL_API
 

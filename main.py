@@ -26,7 +26,6 @@ def proc_results(rsp):
     return [{'idea_name':idea['idea_name'], 'idea_description':idea['idea_description'], 'id': uuid.uuid4().hex} for idea in json.loads(rsp.choices[0].message.content)['ideas']]
 
 @app.get("/generate")
-@cache
 def gen_ideas(idea:str):
     rsp = oai.chat.completions.create(
         model="gpt-3.5-turbo-0125",
@@ -47,7 +46,6 @@ def gen_ideas(idea:str):
     return proc_results(rsp)
 
 @app.get("/expand")
-@cache
 def expand_ideas(idea_name: str, idea_description: str, instruction:Optional[str] = None):
     rsp = oai.chat.completions.create(
         model="gpt-3.5-turbo",

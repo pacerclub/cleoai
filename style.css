@@ -3,13 +3,17 @@ body {
     font-family: -apple-system, "system-ui", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
     font-weight: 300;
     text-align: center;
-    background-color: #f8f9fa;
+    background-image: radial-gradient( circle farthest-corner at 10% 20%, rgb(0, 138, 126) 0%, #00518a, rgb(58, 0, 87) 90% );
+    height: 100%;
     margin: 0;
     padding: 0;
     width: 90%;
     max-width: fit-content;
     margin-left: auto;
     margin-right: auto;
+    color: white;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 p {
@@ -19,13 +23,13 @@ p {
 
 a {
     text-decoration: none;
-    color: #007bff;
+    color: #4cdeff;
     font-weight: 800;
     transition: all 0.3s ease-in-out;
 }
 
 a:hover {
-    color: #0056b3;
+    color: #2aafd5;
 }
 
 /* Container Styles */
@@ -33,9 +37,10 @@ a:hover {
     width: 80vw;
     margin: 50px auto;
     padding: 40px;
-    background-color: #fff;
-    border-radius: 20px;
+    background-image: radial-gradient( circle farthest-corner at 10% 20%, rgba(0, 0, 0, 0.43) 0%, rgba(0, 0, 0, 0.44) 90% );
+    border-radius: 30px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
 }
 
 /* Heading Styles */
@@ -74,14 +79,36 @@ h1 {
 /* Input Styles */
 input:not([type="file" i], [type="image" i], [type="checkbox" i], [type="radio" i]) {
     width: 90%;
+    max-width: 500px;
     padding: 15px;
     margin-bottom: 50px;
     border: none;
-    border-radius: 10px;
+    border-radius: 50px;
     background-color: #f0f0f0;
     font-size: 2vh;
     outline: none;
     transition: background-color 0.3s;
+}
+
+@media only screen and (max-width: 600px) {
+    input:not([type="file" i], [type="image" i], [type="checkbox" i], [type="radio" i]) {
+        width: 90%;
+    }
+
+    .container {
+        width: auto;
+        padding: 2px;
+    }
+
+    footer p {
+        font-size: 1.5vh;
+
+    }
+
+    #ideaContainer {
+        width: 85%;
+        justify-content: center;
+    }
 }
 
 input[type="text"]::placeholder {
@@ -98,7 +125,7 @@ button {
     background-color: #007bff;
     color: #fff;
     border: none;
-    border-radius: 10px;
+    border-radius: 50px;
     cursor: pointer;
     font-size: 2vh;
     transition: background-color 0.3s;
@@ -135,7 +162,7 @@ button:hover {
     padding: 15px;
     margin-bottom: 20px;
     border-radius: 10px;
-    background-color: #f1f1f1;
+    background-image: radial-gradient( circle farthest-corner at 10% 20%, rgba(0, 0, 0, 0.43) 0%, rgba(0, 0, 0, 0.44) 90% );
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -144,8 +171,12 @@ button:hover {
 }
 
 footer {
-    bottom: 0;
+    bottom: 5px;
     position: relative;
+}
+
+footer p {
+    margin-bottom: 40px;
 }
 
 #pathContainer {
@@ -155,7 +186,7 @@ footer {
 }
 
 #pathContainer button {
-    color: black;
+    color: white;
     background: none;
     padding: 0;
     font-size: 2.5vh;

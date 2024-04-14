@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/CleoAI.iml" filepath="$PROJECT_DIR$/.idea/CleoAI.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/cleoai.iml" filepath="$PROJECT_DIR$/.idea/cleoai.iml" />
     </modules>
   </component>
 </project>
