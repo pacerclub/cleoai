@@ -5,12 +5,10 @@ body {
     text-align: center;
     background-image: radial-gradient( circle farthest-corner at 10% 20%, rgb(0, 138, 126) 0%, #00518a, rgb(58, 0, 87) 90% );
     height: 100%;
-    margin: 0;
     padding: 0;
     width: 90%;
     max-width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     color: white;
     background-repeat: no-repeat;
     background-attachment: fixed;
