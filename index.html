@@ -8,14 +8,14 @@
 <body>
     <div class="container">
         <div id="logoContainer">
-            <h1 id="title"><div class="gradient">Cleo</div>AI</h1>
+            <h1 id="title"><span class="gradient">Cleo</span>AI</h1>
             <h2 id="description">Your Personal AI Brainstorming Assistant</h2>
         </div>
 
         <input id="inputBar" placeholder="Enter your idea...">
         <button id="generateBtn" onclick="generateIdea(document.getElementById('inputBar').value)">
             <span id="generateBtnInternal">Generate Ideas</span>
-            <img class="loading-icon" src="assets/loading.gif">
+            <img class="loading-icon" src="assets/loading.gif" alt="Loading...">
         </button>
         <div id="pathContainer"></div>
         <div id="ideaContainer"></div>
