@@ -49,7 +49,7 @@ This project was developed by [Zigao Wang](https://github.com/ZigaoWang) and [Je
 
 ## Support
 
-For support, email us at **a@zigao.wang** or open an issue in the GitHub repository.
+For support, email us at *a@zigao.wang* or open an issue in the GitHub repository.
 
 ## Acknowledgements
 
